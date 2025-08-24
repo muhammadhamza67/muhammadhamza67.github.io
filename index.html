@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Muhammad Hamza — Portfolio</title>
-  <meta name="description" content="Portfolio of Muhammad Hamza — Flutter Developer & CS Student." />
+  <meta name="description" content="Portfolio of Muhammad Hamza — Full Stack Developer & Python Enthusiast." />
   <link rel="icon" href="assets/images/profile.png" type="image/png" />
 
   <!-- Google Fonts -->
@@ -12,7 +12,6 @@
 
   <!-- Styles -->
   <style>
-    /* Global Reset */
     * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
     body {
       font-family: 'Poppins', sans-serif;
@@ -56,10 +55,7 @@
       font-weight: 500;
       transition: 0.3s;
     }
-    .nav-links a:hover {
-      color: #f4c542;
-      text-shadow: 0 0 8px #f4c542;
-    }
+    .nav-links a:hover { color: #f4c542; text-shadow: 0 0 8px #f4c542; }
     .menu-toggle { display: none; font-size: 1.8rem; color: #f4c542; cursor: pointer; }
 
     /* Hero */
@@ -91,13 +87,10 @@
       transition: 0.3s;
       box-shadow: 0 4px 15px rgba(244,197,66,0.3);
     }
-    .btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 20px rgba(244,197,66,0.5);
-    }
+    .btn:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(244,197,66,0.5); }
     .hero-img img {
-      width: 200px;
-      height: 200px;
+      width: 220px;
+      height: 220px;
       border-radius: 50%;
       border: 3px solid #f4c542;
       object-fit: cover;
@@ -107,11 +100,7 @@
     .hero-img img:hover { transform: scale(1.08); }
 
     /* Sections */
-    .section {
-      padding: 4rem 2rem;
-      max-width: 1200px;
-      margin: auto;
-    }
+    .section { padding: 4rem 2rem; max-width: 1200px; margin: auto; }
     .section-title {
       text-align: center;
       font-size: 2rem;
@@ -144,11 +133,8 @@
       box-shadow: 0 6px 18px rgba(0,0,0,0.5);
       transition: transform 0.3s, box-shadow 0.3s;
     }
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 12px 25px rgba(244,197,66,0.3);
-    }
-    .card img { width: 100%; height: 180px; object-fit: cover; }
+    .card:hover { transform: translateY(-6px); box-shadow: 0 12px 25px rgba(244,197,66,0.3); }
+    .card img { width: 100%; height: auto; object-fit: contain; background: #0d0d0d; }
     .card-body { padding: 1rem; }
     .card-body h3 { margin-bottom: 0.5rem; color: #fff; }
     .card-body p { color: #cfcfcf; font-size: 0.95rem; }
@@ -175,24 +161,27 @@
     .about-text p { color: #cfcfcf; font-size: 1.05rem; line-height: 1.6; }
 
     /* Skills */
+    .skills-section { display: grid; gap: 2rem; }
+    .skill-category {
+      background: #141414;
+      padding: 1.5rem;
+      border-radius: 10px;
+      border: 1px solid rgba(255,215,0,0.15);
+    }
+    .skill-category h3 { color: #f4c542; margin-bottom: 1rem; }
     .skills-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
       gap: 1rem;
     }
     .skill-card {
-      background: #141414;
-      padding: 1rem;
+      background: #1a1a1a;
+      padding: 0.8rem;
       text-align: center;
       border-radius: 8px;
-      border: 1px solid rgba(255,215,0,0.15);
       transition: 0.3s;
     }
-    .skill-card:hover {
-      background: #1e1e1e;
-      color: #f4c542;
-      transform: translateY(-4px);
-    }
+    .skill-card:hover { background: #1e1e1e; color: #f4c542; transform: translateY(-4px); }
 
     /* Contact */
     #contact { text-align: center; }
@@ -238,7 +227,7 @@
   <section id="hero" class="hero">
     <div class="hero-content">
       <h2>Hello, I'm <span>Muhammad Hamza</span></h2>
-      <p>Flutter Developer & Computer Science Student</p>
+      <p>Full Stack Developer & Python Enthusiast</p>
       <a href="#projects" class="btn">View My Work</a>
     </div>
     <div class="hero-img">
@@ -281,9 +270,9 @@
       <img src="assets/images/profile.png" alt="Muhammad Hamza">
       <div class="about-text">
         <p>
-          I'm Muhammad Hamza, a passionate Flutter developer and Computer Science student.  
-          I specialize in creating modern, responsive, and user-friendly apps.  
-          My goal is to deliver high-quality solutions and continue improving my craft.
+          I'm Muhammad Hamza, a passionate Full Stack Developer and Python Enthusiast.  
+          I specialize in building scalable, responsive, and user-friendly web and mobile apps.  
+          My goal is to deliver high-quality solutions and continuously grow my expertise.
         </p>
       </div>
     </div>
@@ -292,13 +281,38 @@
   <!-- Skills -->
   <section id="skills" class="section">
     <h2 class="section-title">Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-card">Flutter</div>
-      <div class="skill-card">Dart</div>
-      <div class="skill-card">Firebase</div>
-      <div class="skill-card">Git & GitHub</div>
-      <div class="skill-card">UI/UX Design</div>
-      <div class="skill-card">Java</div>
+    <div class="skills-section">
+      <div class="skill-category">
+        <h3>Technical Skills</h3>
+        <div class="skills-grid">
+          <div class="skill-card">Full Stack Development</div>
+          <div class="skill-card">Python</div>
+          <div class="skill-card">JavaScript</div>
+          <div class="skill-card">Django</div>
+          <div class="skill-card">Flutter</div>
+          <div class="skill-card">Firebase</div>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3>Tools</h3>
+        <div class="skills-grid">
+          <div class="skill-card">Git & GitHub</div>
+          <div class="skill-card">VS Code</div>
+          <div class="skill-card">Postman</div>
+          <div class="skill-card">Figma</div>
+          <div class="skill-card">Docker</div>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3>Soft Skills</h3>
+        <div class="skills-grid">
+          <div class="skill-card">Problem Solving</div>
+          <div class="skill-card">Teamwork</div>
+          <div class="skill-card">Communication</div>
+          <div class="skill-card">Time Management</div>
+          <div class="skill-card">Adaptability</div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -316,7 +330,6 @@
 
   <!-- Script -->
   <script>
-    // Mobile menu toggle
     const menuToggle = document.querySelector(".menu-toggle");
     const navLinks = document.querySelector(".nav-links");
     menuToggle.addEventListener("click", () => navLinks.classList.toggle("active"));
